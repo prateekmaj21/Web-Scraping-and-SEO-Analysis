@@ -1,6 +1,6 @@
 streamlit
 requests
 bs4
-googlesearch
+google-search
 re
 requests_html
