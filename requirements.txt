@@ -1,0 +1,6 @@
+streamlit
+requests
+bs4
+googlesearch
+re
+requests_html
