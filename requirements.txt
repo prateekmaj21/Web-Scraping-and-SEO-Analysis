@@ -2,5 +2,5 @@ streamlit
 requests
 bs4
 google-search
-re
+regex
 requests_html
