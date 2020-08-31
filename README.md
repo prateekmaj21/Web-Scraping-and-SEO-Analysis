@@ -1,6 +1,18 @@
 # Web-Scraping-and-SEO-Analysis
 A project that helps one analyse the SEO for a particular Search Engine query.
 
+## Requirements
+
+```
+streamlit
+requests
+bs4
+google-search
+regex
+google
+requests-html
+```
+
 ## Developers
 
 + [Prateek Majumder](https://github.com/prateekmaj21)
