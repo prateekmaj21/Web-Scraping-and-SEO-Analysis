@@ -3,5 +3,3 @@ requests
 bs4
 google-search
 regex
-requests_html
-warnings
