@@ -107,12 +107,12 @@ st.write(meta_full)
 ('-------')
 
 num2=title_full.count(query)
-st.write("The frequency of the string "",query,""in all the link's title is :",num2)
+st.write("The frequency of the string ",query,"in all the link's title is :",num2)
 
 ('-------')
 
 num3=meta_full.count(query)
-st.write("The frequency of the string "",query,""in all the link's meta is:",num3)
+st.write("The frequency of the string ",query,"in all the link's meta is:",num3)
 
 
 ('-------')
