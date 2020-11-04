@@ -45,7 +45,10 @@ body=" "
 for k in links:
     html_content = requests.get(k).text
     soup = BeautifulSoup(html_content, "lxml")
-    body=body+soup.body.text
+    try:
+        body=body+soup.body.text
+    except:
+        body= body+" "
     
 meta_tag=soup.findAll('meta')
 
@@ -58,7 +61,7 @@ body=body.lower()
 num=body.count(query)
 
 ('-------')
-st.write("The frequency of the string ",query,"in the all the link's body combined is :",num)
+st.write("The frequency of the string "",query,""in the all the link's body combined is :",num)
 
 title_full=" "
 meta_full=" "
@@ -104,12 +107,12 @@ st.write(meta_full)
 ('-------')
 
 num2=title_full.count(query)
-st.write("The frequency of the string ",query,"in all the link's title is :",num2)
+st.write("The frequency of the string "",query,""in all the link's title is :",num2)
 
 ('-------')
 
 num3=meta_full.count(query)
-st.write("The frequency of the string ",query,"in all the link's meta is:",num3)
+st.write("The frequency of the string "",query,""in all the link's meta is:",num3)
 
 
 ('-------')
