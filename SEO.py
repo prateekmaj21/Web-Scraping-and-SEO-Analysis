@@ -61,7 +61,7 @@ body=body.lower()
 num=body.count(query)
 
 ('-------')
-st.write("The frequency of the string "",query,""in the all the link's body combined is :",num)
+st.write("The frequency of the string ",query,"in the all the link's body combined is :",num)
 
 title_full=" "
 meta_full=" "
