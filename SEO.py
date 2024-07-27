@@ -92,6 +92,5 @@ st.write("The frequency of the string", query, "in all the link's titles is:", n
 num3 = meta_full.count(query.lower())
 st.write("The frequency of the string", query, "in all the link's meta descriptions is:", num3)
 
-st.title("Developed by-")
-st.markdown("Sayanti Dutta & Prateek Majumder")
-st.markdown("All code rights belong to the authors.")
+st.title("Thank You")
+
