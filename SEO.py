@@ -3,7 +3,6 @@ import requests
 from bs4 import BeautifulSoup
 from googlesearch import search
 import re
-from requests_html import HTMLSession
 import streamlit as st
 import warnings
 from PIL import Image
@@ -67,12 +66,12 @@ meta_full = ""
 
 for j in links:
     try:
-        session = HTMLSession()
-        response = session.get(j)
-        title = response.html.find('title')
-        title_full += title[0].text if title else " "
-        meta_desc = response.html.xpath('//meta[@name="description"]/@content')
-        meta_full += meta_desc[0] if meta_desc else " "
+        html_content = requests.get(j).text
+        soup = BeautifulSoup(html_content, "lxml")
+        title = soup.title.string if soup.title else " "
+        title_full += title
+        meta_desc = soup.find("meta", {"name": "description"})
+        meta_full += meta_desc["content"] if meta_desc else " "
     except Exception as e:
         st.write(f"Error processing link {j}: {e}")
 
@@ -94,4 +93,4 @@ st.write("The frequency of the string", query, "in all the link's meta descripti
 
 st.title("Developed by-")
 st.markdown("Sayanti Dutta & Prateek Majumder")
-
+st.markdown("All code rights belong to the authors.")
