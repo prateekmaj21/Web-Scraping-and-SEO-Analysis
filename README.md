@@ -13,8 +13,8 @@ google
 requests-html
 ```
 
-## Working Link (Heroku)- 
-https://web-scraper-and-seo-analysis.herokuapp.com/
+## Working Link - 
+https://web-scraping-and-seo-analysis-lauh8ng2bbwsp6q6hoqhcn.streamlit.app/
 
 ## Developers
 
