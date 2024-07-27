@@ -15,9 +15,3 @@ lxml
 ## Working Link - 
 https://web-scraping-and-seo-analysis-lauh8ng2bbwsp6q6hoqhcn.streamlit.app/
 
-## Developers
-
-+ [Prateek Majumder](https://github.com/prateekmaj21)
-
-
-+ [Sayanti Dutta](https://github.com/SayantiDutta2000)
