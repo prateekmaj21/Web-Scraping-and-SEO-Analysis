@@ -41,7 +41,8 @@ body = ""
 
 # Perform the search and display links
 st.subheader("The links searched are:")
-for i in search(query, tld=tld, lang='en', num=link_count, start=0, stop=link_count, pause=2.0):
+search_query = f"{query} site:{tld}"
+for i in search(search_query, num_results=link_count):
     st.write(i)
     links.append(i)
 
