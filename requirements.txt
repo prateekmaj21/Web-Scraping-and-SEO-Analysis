@@ -1,7 +1,6 @@
-streamlit
 requests
-bs4
-google-search
-regex
-google
-requests-html
+beautifulsoup4
+googlesearch-python
+streamlit
+Pillow
+lxml
